@@ -1,0 +1,30 @@
+A={2,3,4,5}
+B={7,8,9,1,2}
+
+result=[ ]
+for element in A:
+	if element not in result:
+		result.append(element)
+for element in B:
+	if element not in result:
+		result.append(element)
+print("union: ",result)
+
+res=[]
+for element in A:
+	if element in B:
+		res.append(element)
+print("intersection: ",res)
+
+diff=[]
+for element in A:
+	if element not in B:
+		diff.append(element)
+print("A-B: ",diff)
+
+differ=[]
+for element in B:
+	if element not in A:
+		differ.append(element)
+print("B-A: ",differ)
+
